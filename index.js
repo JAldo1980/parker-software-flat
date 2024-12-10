@@ -35,7 +35,7 @@ const solutionRender = solutionData.map((item) => {
         </div>
         <a 
           href="${item.link}" 
-          class="bg-blue-500 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-600 mt-auto text-center"
+          class="bg-[#e06a61] text-white text-sm font-medium px-4 py-2 rounded hover:bg-[#b04943] mt-auto text-center"
           aria-label="${item.header} solution"
         >
           ${item.cta}
@@ -84,7 +84,7 @@ const resourceRender = resourceData.map((resource) => {
           <p class="text-xs text-gray-600 mb-4">${resource.date}</p>
           <p class="text-sm text-gray-700 mb-4">${resource.textOne}</p>
         </div>
-        <button class="bg-red-500 text-white text-sm font-medium px-4 py-2 rounded hover:bg-red-600 mt-auto">
+        <button class="bg-[#e06a61] text-white text-sm font-medium px-4 py-2 rounded hover:bg-[#b04943] mt-auto">
           ${resource.cta}
         </button>
       </div>

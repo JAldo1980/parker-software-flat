@@ -40,17 +40,21 @@
                 alt="Parker Software Logo"
               />
             </div>
-            <div>
+            <div class="flex gap-6 items-center">
               <a href="" class="hover:underline cursor-pointer">Solutions</a>
               <a href="" class="hover:underline cursor-pointer">Resources</a>
-              <a href="" class="hover:underline cursor-pointer">Contact</a>
+              <button
+                class="px-6 py-3 bg-[#e06a61] text-white rounded-lg shadow hover:bg-[#b04943] transition"
+              >
+                Contact
+              </button>
             </div>
           </nav>
         </div>
 
         <!-- header -->
         <header
-          class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto px-4 sm:px-8"
+          class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mt-6 px-4 sm:px-8"
         >
           <div>
             <h1
@@ -63,7 +67,7 @@
               communication & automation for over 22 years.
             </p>
             <button
-              class="mt-6 px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary-dark transition"
+              class="mt-6 px-6 py-3 bg-[#e06a61] text-white rounded-lg shadow hover:bg-[#b04943] transition"
             >
               Explore
             </button>
@@ -104,43 +108,74 @@
           <h2>Trusted by Our Happy Clients</h2>
           <div
             id="client-container"
-            class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto px-4 sm:px-8"
+            class="flex flex-wrap justify-between items-center sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto px-4 sm:px-8"
           >
             <!-- clients - add -->
           </div>
         </section>
         <!-- first banner -->
         <article
-          class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto px-4 sm:px-8"
+          class="sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto px-4 sm:px-8"
         >
-          <h3>
-            Master the Future of Automation | Webinar January 19th 19:00 GMT
-          </h3>
-          <p>Sign Up for Our Latest Webinar Today.</p>
-          <div>
-            <input type="email" placeholder="Enter your email" />
-            <button>Sign up</button>
+          <!-- ad banner -->
+          <div class="bg-[#3a3a3a] text-white py-6 px-4 w-full">
+            <div class="max-w-screen-xl mx-auto text-center">
+              <p class="text-lg font-medium">
+                Master the Future of Automation | Webinar January 19th 19:00 GMT
+              </p>
+              <p class="text-sm mb-4">Sign Up for Our Latest Webinar Today.</p>
+              <div
+                class="flex flex-col sm:flex-row items-center justify-center gap-4"
+              >
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full sm:w-[300px] px-4 py-2 text-gray-900 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
+                />
+                <button
+                  class="bg-[#e06a61] text-white px-6 py-2 rounded-md hover:bg-[#b04943] transition"
+                >
+                  Sign up
+                </button>
+              </div>
+            </div>
           </div>
         </article>
 
         <section
           id="resource-container"
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-start max-w-[1536px] mx-auto px-4 sm:px-8"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-start max-w-[1536px] mx-auto px-4 sm:px-8 mt-6"
         >
           <!-- Resource cards will render here -->
         </section>
 
         <!-- second banner -->
+        <!-- first banner -->
         <article
-          class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto px-4 sm:px-8"
+          class="sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] mx-auto px-4 sm:px-8 mt-6"
         >
-          <h3>
-            Master the Future of Automation | Webinar January 19th 19:00 GMT
-          </h3>
-          <p>Sign Up for Our Latest Webinar Today.</p>
-          <div>
-            <input type="email" placeholder="Enter your email" />
-            <button>Sign up</button>
+          <!-- ad banner -->
+          <div class="bg-[#3a3a3a] text-white py-6 px-4 w-full">
+            <div class="max-w-screen-xl mx-auto text-center">
+              <p class="text-lg font-medium">
+                Master the Future of Automation | Webinar January 19th 19:00 GMT
+              </p>
+              <p class="text-sm mb-4">Sign Up for Our Latest Webinar Today.</p>
+              <div
+                class="flex flex-col sm:flex-row items-center justify-center gap-4"
+              >
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full sm:w-[300px] px-4 py-2 text-gray-900 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
+                />
+                <button
+                  class="bg-[#e06a61] text-white px-6 py-2 rounded-md hover:bg-[#b04943] transition"
+                >
+                  Sign up
+                </button>
+              </div>
+            </div>
           </div>
         </article>
         <footer>
