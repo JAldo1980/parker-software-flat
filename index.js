@@ -6,14 +6,15 @@ import { resourceData } from "./resourceData.js";
 // PROBLEM DATA
 
 const problemContainer = document.getElementById("problem-container");
-const problemRender = problemData.map((item) => {
+
+const problemRender = problemData.map((problem) => {
   return `
-    <div>
-        <h4 class="text-sm sm:text-base lg:text-lg text-[#3a3a3a]">${item.text}</h4>
-    
+    <div class="bg-[#3a3a3a] shadow-lg rounded-lg p-6 mb-4">
+      <p class="text-lg text-[#f2f2f2] font-semibold">${problem.text}</p>
     </div>
   `;
 });
+
 problemContainer.innerHTML = problemRender.join("");
 
 // SOLUTION DATA
