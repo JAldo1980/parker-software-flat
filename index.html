@@ -48,18 +48,22 @@
         </div>
 
         <!-- header -->
-        <header>
-          <h1 class="text-6xl text-primary">
-            Enterprise Communication & Automation Solutions
-          </h1>
-          <p>
-            Where innovation meets efficiency. Empowering seamless communication
-            & automation for over 22 years.
-          </p>
-          <button>Explore</button>
+        <header class="grid grid-cols-2 items-center">
+            <div>
+                <h1 class="text-6xl text-primary">
+                    Enterprise Communication & Automation Solutions
+                  </h1>
+                  <p>
+                    Where innovation meets efficiency. Empowering seamless communication
+                    & automation for over 22 years.
+                  </p>
+                  <button>Explore</button>
+            </div>
+          
           <div>
             <img
-              src=""
+            class="w-full"
+              src="hero-image.png"
               alt="An image of a computer showing various Parker Software images"
             />
           </div>
@@ -68,14 +72,9 @@
         <main>
           <section>
             <h2>Business Challenges</h2>
-            <div>
-              <div>
-                "Sometimes customer queries get lost or take too long to route."
-              </div>
-              <div>"I’m afraid my data is exposed on external servers."</div>
-              <div>"My team’s communication feels slow and inefficient."</div>
-              <div>"I'm worried about the security of our customer data."</div>
-              <div>"I spend too much time on repetitive tasks."</div>
+            <div id="problem-container">
+             
+              
             </div>
           </section>
           <section>
@@ -129,6 +128,6 @@
         </footer>
       </div>
     </div>
-    <script src="index.js"></script>
+    <script  type="module" src="index.js"></script>
   </body>
 </html>

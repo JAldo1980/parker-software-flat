@@ -1,9 +1,8 @@
 /* index.css */
 :root {
   --primary-color: #3a3a3a;
-  --secondary-color: #16a34a;
-  --background: #e0e0e0;
-  --accent-off-white: #f2f2f2;
+  --background: #f2f2f2;
+  --accent-grey: #e0e0e0;
   --accent-teal: #61e0c5;
   --accent-orange: #e06a61;
   --button-hover: #b04943;
