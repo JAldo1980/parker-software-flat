@@ -27,6 +27,7 @@ const solutionRender = solutionData.map((item) => {
           <img 
             src="${item.image}" 
             alt="${item.header}" 
+            aria-label="${item.ariaLabel}"
             class="w-full object-contain mb-4 rounded-md"
           />
           <h2 class="text-lg font-bold text-[#3a3a3a] mb-2">${item.header}</h2>
@@ -92,3 +93,13 @@ const resourceRender = resourceData.map((resource) => {
 });
 
 resourceContainer.innerHTML = resourceRender.join("");
+
+// hamburger function
+
+const hamburgerIcon = document.getElementById("hamburger-icon");
+const mobileMenu = document.getElementById("mobile-menu");
+
+// Toggle the mobile menu when the hamburger icon is clicked
+hamburgerIcon.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
