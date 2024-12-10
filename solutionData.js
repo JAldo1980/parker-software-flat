@@ -9,6 +9,7 @@ export const solutionData = [
       "Built with security at its core, it ensures your customer data stays private. WhosOn makes it easy to deliver great customer service while improving communication across your business.",
     cta: "Explore WhosOn",
     link: "",
+    ariaLabel: "WhosOn live chat tool for customer engagement and support",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const solutionData = [
       "Whether it’s replying to customers, updating records, or following up on tasks, it saves you time and effort, helping your team focus on what matters most.",
     cta: "Explore ThinkAutomation",
     link: "",
+    ariaLabel: "ThinkAutomation automated messaging system for team efficiency",
   },
   {
     id: 3,
@@ -31,5 +33,6 @@ export const solutionData = [
       "It’s cost-effective and integrates well with other tools like WhosOn and ThinkAutomation, making your workflow smarter and more efficient.",
     cta: "Explore OptimaGPT",
     link: "",
+    ariaLabel: "OptimaGPT secure AI tool for data privacy and task automation",
   },
 ];
