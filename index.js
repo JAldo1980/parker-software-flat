@@ -22,24 +22,26 @@ const solutionContainer = document.getElementById("solution-container");
 
 const solutionRender = solutionData.map((item) => {
   return `
-    <div class="bg-gray-100 shadow-lg rounded-lg  p-6 ">
-      <img 
-        src="${item.image}" 
-        alt="${item.header}" 
-        class="w-full object-contain mb-4"
-      />
-      <h2 class="text-lg font-bold text-gray-800 mb-2">${item.header}</h2>
-      <p class="text-sm text-gray-700 mb-2">${item.textOne}</p>
-      <p class="text-sm text-gray-700 mb-4">${item.textTwo}</p>
-      <a 
-        href="${item.link}" 
-        class="bg-blue-500 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-600"
-        aria-label="${item.header} solution"
-      >
-        ${item.cta}
-      </a>
-    </div>
-  `;
+      <div class="bg-gray-100 shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <img 
+            src="${item.image}" 
+            alt="${item.header}" 
+            class="w-full object-contain mb-4 rounded-md"
+          />
+          <h2 class="text-lg font-bold text-gray-800 mb-2">${item.header}</h2>
+          <p class="text-sm text-gray-700 mb-2">${item.textOne}</p>
+          <p class="text-sm text-gray-700 mb-4">${item.textTwo}</p>
+        </div>
+        <a 
+          href="${item.link}" 
+          class="bg-blue-500 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-600 mt-auto text-center"
+          aria-label="${item.header} solution"
+        >
+          ${item.cta}
+        </a>
+      </div>
+    `;
 });
 
 solutionContainer.innerHTML = solutionRender.join("");
@@ -69,22 +71,24 @@ const resourceContainer = document.getElementById("resource-container");
 
 const resourceRender = resourceData.map((resource) => {
   return `
-    <div class="bg-gray-100 shadow-lg rounded-lg p-4">
-      <img 
-        src="${resource.image}" 
-        alt="${resource.imageAlt}" 
-        aria-label="${resource.ariaLabel}" 
-        class="w-full object-cover mb-4 rounded-md"
-      />
-      <h3 class="text-lg font-semibold text-gray-800 mb-2">${resource.header}</h3>
-      <p class="text-sm text-white bg-gray-800 px-2 py-1 rounded mb-2">${resource.category}</p>
-      <p class="text-xs text-gray-600 mb-4">${resource.date}</p>
-      <p class="text-sm text-gray-700 mb-4">${resource.textOne}</p>
-      <button class="bg-red-500 text-white text-sm font-medium px-4 py-2 rounded hover:bg-red-600">
-        ${resource.cta}
-      </button>
-    </div>
-  `;
+      <div class="bg-gray-100 shadow-lg rounded-lg p-4 flex flex-col justify-between h-full">
+        <div>
+          <img 
+            src="${resource.image}" 
+            alt="${resource.imageAlt}" 
+            aria-label="${resource.ariaLabel}" 
+            class="w-full object-cover mb-4 rounded-md"
+          />
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">${resource.header}</h3>
+          <p class="text-sm text-white bg-gray-800 px-2 py-1 rounded mb-2">${resource.category}</p>
+          <p class="text-xs text-gray-600 mb-4">${resource.date}</p>
+          <p class="text-sm text-gray-700 mb-4">${resource.textOne}</p>
+        </div>
+        <button class="bg-red-500 text-white text-sm font-medium px-4 py-2 rounded hover:bg-red-600 mt-auto">
+          ${resource.cta}
+        </button>
+      </div>
+    `;
 });
 
 resourceContainer.innerHTML = resourceRender.join("");
